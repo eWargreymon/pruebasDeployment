@@ -1,0 +1,126 @@
+.presentation {
+  height: calc(100vh - 165px);
+  background-image: url("../../img/tulipan.webp");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  display: block;
+  color: white;
+  font-size: 200%;
+}
+.presentation .texto {
+  float: right;
+  height: 100%;
+  width: 50%;
+  display: block;
+  text-align: left;
+  color: rgb(37, 51, 68);
+  justify-content: center;
+  font-weight: 350;
+}
+.presentation .texto p {
+  float: right;
+  height: fit-content;
+  display: block;
+  text-align: left;
+  color: black;
+  font-size: calc(5.5vh);
+  margin-top: 10%;
+}
+.presentation #imagepreview {
+  display: none;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.presentation #imagepreview img {
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+}
+
+.presentation #imagepreview .close {
+  height: 7%;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+.presentation form {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.presentation form input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.presentation label[for="pic"] {
+  float: right;
+  display: block;
+  text-align: center;
+  color: rgb(31, 42, 56);
+  justify-content: center;
+  margin-right: 90px;
+  background: radial-gradient(circle, rgb(240, 188, 241), rgb(231, 231, 231))
+    no-repeat center center fixed;
+  border-radius: 15px;
+  border-color: rgb(43, 60, 80);
+  border-width: 5px;
+  border-style: solid;
+  padding: 10px;
+  font-size: calc(10vh - 40px);
+  transition: all 1s;
+  cursor: pointer;
+}
+.presentation label[for="pic"]:hover {
+  background: radial-gradient(circle, rgb(231, 231, 231), rgb(240, 188, 241))
+    no-repeat center center fixed;
+  border-color: black;
+  color: black;
+  transition: all 1s;
+  transform: translateY(-10px);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+}
+
+.presentation form input[type="submit"] {
+  float: left;
+  display: none;
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(31, 42, 56);
+  justify-content: center;
+  margin-right: 90px;
+  background: radial-gradient(circle, rgb(240, 188, 241), rgb(231, 231, 231))
+    no-repeat center center fixed;
+  border-radius: 15px;
+  border-color: rgb(43, 60, 80);
+  border-width: 5px;
+  border-style: solid;
+  padding: 10px;
+  font-size: calc(10vh - 40px);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.presentation form input[type="submit"]:hover {
+  background: radial-gradient(circle, rgb(231, 231, 231), rgb(240, 188, 241))
+    no-repeat center center fixed;
+  border-color: black;
+  color: black;
+  transition: all 1s;
+  transform: translateY(-10px);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+}

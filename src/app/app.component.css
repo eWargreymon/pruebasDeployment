@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+}
+
+footer {
+  color: lightgray;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
